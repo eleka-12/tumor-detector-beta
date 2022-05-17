@@ -1,4 +1,6 @@
 flask
 Flask-Cors
 werkzeug
-urllib
+gunicorn==20.0.4
+certifi
+click
