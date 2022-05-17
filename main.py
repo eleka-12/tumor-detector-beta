@@ -27,7 +27,7 @@ def index():
     return "Welcome eleinsider.ai team , The top is near...!"
 
 
-app.route("/upload", methods = ['POST','GET'])
+@app.route("/upload", methods = ['POST','GET'])
 def upload():
     if request.method == 'POST':
         if 'file' not in request.files:
