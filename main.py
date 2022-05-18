@@ -24,7 +24,7 @@ uploads = os.getcwd()+"//files//"
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return "Welcome eleinsider.ai team , The top is near...!"
+    return render_template('home.html')
 
 
 @app.route("/upload", methods = ['POST','GET'])
